@@ -121,7 +121,7 @@ class ReactTags extends Component {
 
   componentDidMount() {
     const { autofocus, readOnly } = this.props;
-    
+
     if (autofocus && !readOnly) {
       this.resetAndFocusInput();
     }
@@ -432,7 +432,7 @@ class ReactTags extends Component {
             this.textInput = input;
           }}
           className={classNames.tagInputField}
-          type="text"
+          type="number"
           placeholder={placeholder}
           aria-label={placeholder}
           onFocus={this.handleFocus}
